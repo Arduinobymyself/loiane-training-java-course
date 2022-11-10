@@ -13,8 +13,30 @@ b. A mensagem "Aprovado com Distinção", se a média for igual a
 
 package com.abms.javabasico.aula15.labs;
 
+import java.util.Scanner;
+
 public class Ex20 {
     public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Entre com a nota 1 (n1): ");
+        double n1 = scan.nextDouble();
+        System.out.println("Entre com a nota 1 (n1): ");
+        double n2 = scan.nextDouble();
+        System.out.println("Entre com a nota 1 (n1): ");
+        double n3 = scan.nextDouble();
+
+        double media = (n1 + n2 + n3) / 3;
+
+        if (media == 10) {
+            System.out.println("Aprovado com Distinção! média = "+media);
+        } else if (media >= 7) {
+            System.out.println("Aprovado! média = "+media);
+        } else {
+            System.out.println("Reprovado! média "+media);
+        }
+
 
     }
 }
